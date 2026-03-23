@@ -12,7 +12,7 @@ library(shinyMFCL)  # read_length_fit_file
 library(data.table)
 
 # Model folder
-basedir <- "//penguin/assessments/yft/2023/model_runs/stepwise_shortnames"
+basedir <- "~/x/yft/2026/model_runs/stepwise"
 tagfile <- "yft.tag"
 frqfile <- "yft.frq"
 age_lengthfile <- "yft.age_length"
@@ -22,7 +22,7 @@ models <- dir(basedir)
 models <- models[dir.exists(file.path(basedir, models))]
 
 # Fisheries
-index_fisheries <- 33:37  # harmless to include non-existent fisheries
+index_fisheries <- 33:37
 
 # Output folder
 dir.create("../app/data", showWarnings=FALSE)
