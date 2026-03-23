@@ -155,7 +155,7 @@ ui <- dashboardPage(
       # **** Introduction ****
       tabItem(tabName="introduction", h2("Introduction"),
         fluidRow(column(12, includeMarkdown("introtext/introduction.md"))),
-        fluidRow(column(12, includeMarkdown("introtext/map.md")))
+        fluidRow(column(12, imageOutput("intromap")))
       ), # End of introduction tab
 
       # **** Fitting diagnostics ****
@@ -341,6 +341,10 @@ server <- function(input, output){
   nice_blue <- "steelblue1"
   obs_col <- "steelblue1" # Colours for observed data
   nice_red <- "tomato3"
+
+  output$intromap <- renderImage(
+    list(src="introtext/5_regions.png", width=460),
+    deleteFile=FALSE)
 
   output$llhood_table <- renderDT({
     # dom option drops the search and other stuff
