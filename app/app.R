@@ -2,6 +2,7 @@
 # 2022-04-21  Finlay Scott created for SKJ stepwise development
 # 2022-09-01  Arni Magnusson adapted for YFT review
 # 2023-04-07  Arni Magnusson and Jemery Day adapted for YFT and BET
+# 2026-03-23  Arni Magnusson adapted for YFT 2026
 
 # CRAN packages
 library(shiny)
@@ -21,8 +22,8 @@ default_models <- ll_tab_dat$Model
 default_fishery <- "PS ASS"
 rec_units <- 1000000
 sb_units <- 1000
-copyright.year <- 2023
-shiny.title <- "YFT stepwise 2023"
+copyright.year <- 2026
+shiny.title <- "YFT stepwise 2026"
 
 #---------------------------------------------------------------------------
 
