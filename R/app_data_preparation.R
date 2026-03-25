@@ -12,7 +12,7 @@ library(shinyMFCL)  # read_length_fit_file
 library(data.table)
 
 # Model folder
-basedir <- "~/x/yft/2026/model_runs/stepwise"
+basedir <- "~/x/yft/2026/model_runs/stepwise/shortnames"
 tagfile <- "yft.tag"
 frqfile <- "yft.frq"
 age_lengthfile <- "yft.age_length"
