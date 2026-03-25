@@ -334,6 +334,7 @@ server <- function(input, output){
     all_cols <- c("black", rich.colors(nmodels-1))
     very.rich.colors <- colorRampPalette(c("darkblue", "royalblue", "seagreen", "limegreen", "gold", "darkorange", "red", "darkred"))
     all_cols <- c(very.rich.colors(nmodels-1), "black")
+    all_cols <- 1:2  # two colors
     names(all_cols) <- all_model_names
     model_cols <- all_cols[as.character(chosen_model_names)]
     return(model_cols)
