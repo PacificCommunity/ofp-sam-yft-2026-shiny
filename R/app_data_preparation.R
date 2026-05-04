@@ -20,6 +20,7 @@ age_lengthfile <- "yft.age_length"
 # Specify models to plot
 models <- dir(basedir)
 models <- models[dir.exists(file.path(basedir, models))]
+models <- grepv("^[0-9][0-9]", models)
 
 # Fisheries
 index_fisheries <- 33:37
